@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        #Header{
+            height:150px;
+            background-color:aquamarine;
+        }
+        #footer{
+            height:100px;
+            background-color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="Header">
+          @RenderSection("Header",false)
+        </div>
+
+        <div id="content">
+           @RenderBody()
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>
